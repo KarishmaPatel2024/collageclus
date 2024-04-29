@@ -11,7 +11,7 @@ import pickle
 kmeans_model = pickle.load(open("k_model.pkl","rb"))
 
 # Load the dataset
-df = pd.read_csv("college.csv")
+df = pd.read_csv("College.csv")
 
 # Convert 'Private' column to binary (1 for 'Yes', 0 for 'No')
 def converter(cluster):
