@@ -5,10 +5,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.cluster import KMeans
 from sklearn.metrics import confusion_matrix, classification_report
-import joblib
+import pickle
 
 # Load the pre-trained KMeans model
-kmeans_model = joblib.load("karishma_model.sav")
+kmeans_model = pickle.load(open("k_model.pkl","rb"))
 
 # Load the dataset
 df = pd.read_csv("college.csv")
